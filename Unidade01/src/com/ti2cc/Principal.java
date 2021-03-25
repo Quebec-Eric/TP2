@@ -30,8 +30,10 @@ public class Principal {
 			System.out.println(usuarios[i].toString());
 		}
 
-		//Atualizar usuário
-		usuario.setSenha("nova senha");
+		
+		System.out.println("Nova Senha ==");
+	    Senha= ler.nextLine();
+		usuario.setSenha(Senha);
 		dao.atualizarUsuario(usuario);
 
 		//Mostrar usuários do sexo masculino
